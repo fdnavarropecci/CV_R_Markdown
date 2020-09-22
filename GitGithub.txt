@@ -6,3 +6,54 @@
 - pull: Download changes from remote repo to your local machine
 
 
+- You can add two messages to your commit. First one is the header, second one is the message box
+- git commit -m "This is the header" -m "This is the message box"
+
+1) git pull
+2) Do your changes
+3) git add
+4) git commit -m 
+5) git push
+
+SSH Keys
+- ssh-keygen -t rsa -b 4096 -C "fdnavarropecci@gmail.com"     -- To connect your local machine to your Github account
+- Name the key
+- Add a Passphrase if you want
+- Generates a private and a public key
+- Copy your public key
+-Go to Github, settings, ssh and gpg keys, new ssh key, copy that key, add key.
+- Add your ssh key to the ssh agent
+
+
+GIT push
+- git push origin master
+
+
+Creating a new repository with Git init
+- git init   -- In the folder you're in
+
+-git remote add origin "ssh link to your repo"
+
+Git Branching
+
+- git branch  : Shows branches 
+- git checkout -b feature   -- Creating a new branch
+- git checkout master   -- Switch to master branch
+- git diff feature             -- Compares two versions of the code
+- git merge feature            -- 
+
+Another option to merge that branch would be:
+- git checkout feature
+- git add 
+- git commit
+- git push -u origin feature-readme-instructions
+
+Do a pull request: Once you have pushed the changes it is easier to do it with the Github interface
+- Create the PR add message
+- Merge
+- Switch to the master branch locally
+- git pull
+- git branch -d feature -- Delete the branch when you're done with it
+
+
+ 
